@@ -73,6 +73,7 @@ class DialogBox extends StatelessWidget {
                     horizontal: 20,
                     vertical: 20,
                   ),
+                  filled: true,
                   hintText: 'Task',
                   hintStyle: const TextStyle(fontSize: 14),
                   icon: const Icon(CupertinoIcons.square_list,
@@ -81,6 +82,9 @@ class DialogBox extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                   ),
                 ),
+                maxLines: 10,
+                maxLength: 4096,
+                textInputAction: TextInputAction.done,
               ),
 
               // TextFormField(

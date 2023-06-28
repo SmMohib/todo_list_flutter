@@ -12,11 +12,12 @@ class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
+
       focusColor: Colors.blue,
       hoverColor: Colors.brown,
       onPressed: onPressed,
-      color: Theme.of(context).primaryColor,
-      child: Text(text),
+      color: Colors.brown,
+      child: Text(text,style: TextStyle(color: Colors.white),),
     );
   }
 }
